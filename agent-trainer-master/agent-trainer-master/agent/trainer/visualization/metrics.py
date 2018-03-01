@@ -1,4 +1,6 @@
+#collections是Python内建的一个集合模块，提供了许多有用的集合类。
 from collections import namedtuple
+#matplotlib在Python中应用最多的2D图像的绘图工具包，使用matplotlib能够非常简单的可视化数据。在matplotlib中使用最多的模块就是pyplot。
 import matplotlib.pyplot as plt
 import jsonpickle
 import numpy as np
@@ -6,11 +8,12 @@ import numpy as np
 from agent.trainer.visualization import style
 
 ValuesGroup = namedtuple("ValuesGroup", ["values", "label"])
-class MetricsPlot(object):
 
+class MetricsPlot(object):
+#MetricsPlot 距离图
     def __init__(self):
         self.tableau20 = style.generate_tableau20_colors()
-
+        #返回20种颜色
     def show(self, x_group, y_groups):
         self._plot(x_group, y_groups)
         plt.show()

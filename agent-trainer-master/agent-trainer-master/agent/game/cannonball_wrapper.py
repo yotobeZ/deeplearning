@@ -17,6 +17,7 @@ class Cannonball(object):
 
     def __init__(self, config_file_name):
         copyfile(config_file_name, "config.xml")
+        #给个xml配置文件干嘛？？？？？？？？？？？
 
     def __enter__(self):
         self.obj = lib.ExternalInterface_new()

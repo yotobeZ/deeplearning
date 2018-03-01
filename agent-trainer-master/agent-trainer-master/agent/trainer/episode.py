@@ -298,8 +298,15 @@ class EpisodePlay(object):
 
 
 class EpisodeRunner(object):
+    #初始化 episode runner
     def __init__(self,
+                 #初始化游戏配置，图像，音乐等
                  game_wrapper_factory=CannonballFactory(),
+                 #图像预处理成灰度图，作用：
+                 #现在大部分的彩色图像都是采用RGB颜色模式，处理图像的时候，要分别对RGB三种分量进行处理，
+                 # 实际上RGB并不能反映图像的形态特征，只是从光学的原理上进行颜色的调配。
+                 #所以我们经常要把图像弄成8位的灰度值图像直接进行处理，可以通过直方图，灰度变化，
+                 # 还有正交变换之类的进行处理。甚至经常把图像分割之后变成二值图像处理。
                  preprocessor=ImagePreprocessor(),
                  preprocessor_hyperparameters=PreprocessorHyperparameters()):
         self.game_wrapper_factory = game_wrapper_factory

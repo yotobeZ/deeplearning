@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-
+<!-- xml的设计宗旨是传输数据而非显示数据，具有自我描述性，仅仅是纯文本，
+XML 是独立于软件和硬件的信息传输工具。-->
 <!-- 
     Video Settings
 -->
@@ -13,15 +14,15 @@
     <mode>0</mode>
 
     <!-- 
-        Windowed Mode Settings 
-        Scale: Scale or zoom factor for window mode. 1 is original size. 
+        Windowed Mode Settings （窗口模式设置）
+        Scale: Scale （规模） or zoom （嗡嗡声） factor for window mode. 1 is original size.
     -->
     <window>
         <scale>1</scale>
     </window>
 
     <!-- 
-        Scanline intensity.
+        Scanline intensity.（扫描线强度？？？scanline是个啥玩意）
         0   = No scanlines
         100 = Solid black
         
@@ -33,14 +34,16 @@
     -->
     <scanlines>0</scanlines>
 
-    <!-- FPS 
+    <!-- FPS
+    （FPS是图像领域中的定义，是指画面每秒传输帧数，通俗来讲就是指动画或视频的画面数。每秒钟帧数愈多，所显示的动作就会愈流畅。
+    通常，要避免动作不流畅的最低是30。某些计算机视频格式，每秒只能提供15帧。）
          0 = 30    FPS. Optimized Mode       (Slow computers)
          1 = 30/60 FPS. Original Game Mode.  (The original experience)
          2 = 60    FPS. Smooth Mode.         (Full 60fps)
     -->
     <fps>0</fps>
     
-    <!-- Enable FPS Counter -->
+    <!-- Enable FPS Counter（计数器）     -->
     <fps_counter>0</fps_counter>
 
     <!-- Disable FPS control -->
@@ -95,13 +98,13 @@
             <filename>track4.wav</filename>
         </track4>
     </custom_music>
-</sound>
+ </sound>
 
 <!--
     CannonBoard Arduino Based Interface
  -->
  
-<cannonboard enabled = "0">
+ <cannonboard enabled = "0">
     <!-- Port Name -->
     <port>COM6</port>
     
@@ -113,7 +116,7 @@
     
     <!-- Write Debug Information To Console-->
     <debug>1</debug>
-</cannonboard>
+ </cannonboard>
 
 <!-- 
     Controls Settings
@@ -124,7 +127,7 @@
     1 = Original OutRun Controls (Requires CannonBoard PCB setup)
     
 -->
-<controls mode = "1">
+ <controls mode = "1">
     <!-- Gears: 
         0 = Manual   (Click to shift, for normal play)
         1 = Manual   (Hold to shift, for cabinet play)
@@ -224,12 +227,12 @@
         </haptic>
         
     </analog>
-</controls>
+ </controls>
 
 <!-- 
     Game Engine Settings
 -->
-<engine>
+ <engine>
     <!-- Game Time: 
          0 = Easy      (80 seconds)
          1 = Normal    (75 seconds) 
@@ -257,15 +260,15 @@
          Requires additional ROM files:
          epr-10380.133, epr-10382.118, epr-10381.132, epr-10383.117
          epr-10327.76,  epr-10329.58,  epr-10328.75,  epr-10330.57
-    --->
+    -->
     <japanese_tracks>0</japanese_tracks>
     
-    <!-- Swap In Prototype Coconut Beach Track -->
+    <!-- Swap In Prototype（原型） Coconut Beach Track -->
     <prototype>0</prototype>
     
     <!-- Increase the number of allowed level objects. 
          This fixes the broken arches in Gateway for example.
-    --->
+    -->
     <levelobjects>1</levelobjects>
     
     <!-- Use the original random number generator seed to match the setup of
@@ -291,28 +294,28 @@
     
     <!-- Display debug info that's useful for LayOut track editing -->
     <layout_debug>0</layout_debug>
-</engine>
+ </engine>
 
 <!-- Settings for Time Trial Mode -->
-<time_trial>
+ <time_trial>
     <!-- Default Number of Laps (1 - 5) -->
     <laps>3</laps>
     
     <!-- Default Amount of Traffic (0 - 8), where 0 is off -->
     <traffic>3</traffic>
-</time_trial>
+ </time_trial>
 
 <!-- Settings for Continuous Mode -->
-<continuous>
+ <continuous>
     <!-- Default Amount of Traffic (0 - 8), where 0 is off -->
     <traffic>3</traffic>
-</continuous>
+ </continuous>
 
 <!-- 
     Use the inbuilt menu system. 
     You can disable it and edit this config file instead if it makes more sense for your system.
  -->
-<menu>
+ <menu>
     <enabled>0</enabled>
     <roadspeed>25</roadspeed>
-</menu>
+ </menu>

@@ -15,10 +15,12 @@ from agent.trainer.visualization.metrics import Metrics, MetricsInTrainBundle, M
 
 
 class SessionRunner(object):
-
+    #初始化计算图
     def __init__(self,
                  config,
+                 #初始化episode runner每一次的训练格式，配置好游戏画面，音乐，定义图片长款及灰度化
                  episode_runner=EpisodeRunner(),
+                 #一般属性，都是代表什么的属性？？？？
                  generic_hyperparameters=GenericHyperparameters(),
                  preprocessor_hyperparameters=PreprocessorHyperparameters()):
         self.logger = logging.getLogger(__name__)
