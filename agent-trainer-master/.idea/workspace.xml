@@ -14,7 +14,7 @@
       <file leaf-file-name="__main__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/__main__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
+            <state relative-caret-position="748">
               <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
               <folding>
                 <element signature="e#56#65#0" expanded="true" />
@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
-              <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+              <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -36,7 +36,7 @@
       <file leaf-file-name="episode.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/episode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="6336">
               <caret line="304" column="25" lean-forward="false" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -48,7 +48,7 @@
       <file leaf-file-name="image_preprocessor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/image_preprocessor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
+            <state relative-caret-position="88">
               <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
@@ -58,7 +58,7 @@
       <file leaf-file-name="hyperparameters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/hyperparameters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="1188">
               <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
               <folding />
             </state>
@@ -68,8 +68,8 @@
       <file leaf-file-name="cannonball_wrapper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/game/cannonball_wrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="66">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -80,18 +80,18 @@
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agent-trainer-master/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2200">
+            <state relative-caret-position="5830">
               <caret line="265" column="30" lean-forward="false" selection-start-line="265" selection-start-column="30" selection-end-line="265" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="session.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1148">
-              <caret line="115" column="38" lean-forward="false" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
+            <state relative-caret-position="242">
+              <caret line="83" column="35" lean-forward="true" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -99,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="q_network.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="q_network.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/q_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+            <state relative-caret-position="4234">
+              <caret line="373" column="68" lean-forward="false" selection-start-line="373" selection-start-column="21" selection-end-line="373" selection-end-column="68" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -120,6 +120,8 @@
       <find>QNetworkFactory</find>
       <find>metrics_directory</find>
       <find>_build_graph_forward_pass_bundle</find>
+      <find>num_actions</find>
+      <find>_build_assigns_train_to_forward_pass_variables</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -151,7 +153,7 @@
     <option name="height" value="546" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -164,70 +166,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="agent-trainer-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-trainer-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-trainer-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="agent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-trainer-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="agent" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-trainer-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="agent" type="462c0819:PsiDirectoryNode" />
-              <item name="trainer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-trainer-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="agent" type="462c0819:PsiDirectoryNode" />
-              <item name="trainer" type="462c0819:PsiDirectoryNode" />
-              <item name="visualization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-trainer-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="agent-trainer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="agent" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-trainer-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DRL-FlappyBird-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-trainer-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DRL-FlappyBird-master" type="462c0819:PsiDirectoryNode" />
-              <item name="DRL-FlappyBird-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -327,6 +266,88 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+          <folding>
+            <element signature="e#56#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/episode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6688">
+          <caret line="304" column="25" lean-forward="false" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/image_preprocessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/hyperparameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/game/cannonball_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent-trainer-master/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5830">
+          <caret line="265" column="30" lean-forward="false" selection-start-line="265" selection-start-column="30" selection-end-line="265" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="115" column="38" lean-forward="false" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/q_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/__main__.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
@@ -401,9 +422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#76#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -411,7 +429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -474,7 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -482,15 +498,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#76#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/agent-trainer-master/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
+        <state relative-caret-position="5830">
           <caret line="265" column="30" lean-forward="false" selection-start-line="265" selection-start-column="30" selection-end-line="265" selection-end-column="30" />
           <folding />
         </state>
@@ -500,14 +513,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-132">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/game/cannonball_wrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="66">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
@@ -516,7 +528,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/image_preprocessor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="88">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
@@ -524,7 +536,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/episode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="6336">
           <caret line="304" column="25" lean-forward="false" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -535,14 +547,14 @@
     <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="748">
           <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
           <folding>
             <element signature="e#56#65#0" expanded="true" />
@@ -552,28 +564,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/hyperparameters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="1188">
           <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/session.py">
+    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/q_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1148">
-          <caret line="115" column="38" lean-forward="false" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
+        <state relative-caret-position="4234">
+          <caret line="373" column="68" lean-forward="false" selection-start-line="373" selection-start-column="21" selection-end-line="373" selection-end-column="68" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/q_network.py">
+    <entry file="file://$PROJECT_DIR$/agent-trainer-master/agent/trainer/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+        <state relative-caret-position="242">
+          <caret line="83" column="35" lean-forward="true" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -85,11 +85,15 @@ class QNetwork(object):
     def _build_graph_forward_pass_bundle(self, graph, batch_size):
         with graph.as_default():
             #Inserts a placeholder for a tensor that will be always fed.
+            #input_state 就好像是一个被fed的容器，后续用于session.run等计算
             input_state = tf.placeholder(tf.float32,
                                          shape=(batch_size, self.screen_height, self.screen_width, self.num_channels),
                                          name='input_state')
 
+            #scope n.范围，眼界，v.审视，仔细研究  变量范围名字前缀
+            #model-forward-pass-1/batched_forward_pass_size
             variable_scope_name_prefix = "{0}-{1}-scope".format(self.MODEL_NAME_FORWARD_PASS, batch_size)
+
             output_all_actions_q_values = self._network_model(variable_scope_name_prefix=variable_scope_name_prefix,
                                                               input=input_state,
                                                               output_size=self.num_actions,
