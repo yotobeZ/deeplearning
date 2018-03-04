@@ -12,7 +12,7 @@ class GenericHyperparameters(object):
     MAX_REPLAY_MEMORIES_IN_RAM = 129000
     #每个文件最大记忆容量
     MAX_REPLAY_MEMORIES_PER_FILE = 5000
-
+    #这个是啥？？？？？？？？？？？？？？
     AGENT_HISTORY_LENGTH = 4
 
     #反应时间（毫秒级）
@@ -23,28 +23,40 @@ class GenericHyperparameters(object):
     #此计算相当于 每毫秒游戏画面帧数 向下取整 作为 每两个连续动作之间 间隔的画面帧数
     FRAMES_SKIPPED_UNTIL_NEXT_ACTION = int(round((REACTION_TIME_MILISECONDS * GAME_FRAMES_PER_SECOND) / 1000))
 
+    #回放记忆最小尺寸，？？？？？？？？？？？？？？？
     REPLAY_MEMORIES_MINIMUM_SIZE_FOR_LEARNING = int(round(50000 / AGENT_HISTORY_LENGTH))
+    #回放记忆最近的取样时间？？？？？？？？？？？？？
     REPLAY_MEMORIES_RECENT_SAMPLE_SPAN = int(round(1000000 / AGENT_HISTORY_LENGTH))
+    #训练样本大小？？？？？？？
     REPLAY_MEMORIES_TRAIN_SAMPLE_SIZE = 32
 
+    #探索初始epsilon，epsilon是什么？？？？？？？？？？？
     EXPLORATION_INITIAL_EPSILON = 1.0
+    #探索最终的epsilon
     EXPLORATION_FINAL_EPSILON = 0.1
+    #degradation 退化
     EXPLORATION_EPSILON_FULL_DEGRADATION_AT_STEP = int(round(1000000 / AGENT_HISTORY_LENGTH))
 
+    #更新因子
     Q_UPDATE_DISCOUNT_FACTOR = 0.99
 
     MAXIMUM_NO_ACTIONS_BEGGINING_EPISODE = 30
 
 class QNetworkHyperparameters(object):
     METRICS_SAVE_STEP = 1000
+    #梯度下降 batch 大小
     SGD_BATCH_SIZE = 32
+    #为什么要定义初始和最终学习率，测试怎样学习效果好？？？？
     LEARNING_RATE_INITIAL = 0.00025
     LEARNING_RATE_FINAL = 0.00001
     LEARNING_RATE_DECAY_STEP = 50100
+    #？？？？？
     LEARNING_RATE_FINAL_AT_STEP = 701000
+    #RMS是均方根值 （7+9）/2再开方的意思  what do these parameters mean?????????
     RMS_DECAY = 0.9
     RMS_MOMENTUM = 0.95
     RMS_EPSILON = 0.01
+    #前向传播 计算图数量？？？？？
     NUM_STEPS_ASSIGN_TRAIN_TO_FORWARD_PROP_GRAPH = 10000
 
 ImageDescription = namedtuple("ImageDescription", ["num_channels"])

@@ -302,6 +302,7 @@ class EpisodeRunner(object):
     def __init__(self,
                  #初始化游戏配置，图像，音乐等
                  game_wrapper_factory=CannonballFactory(),
+                 #初始化图像处理的一些参数
                  #图像预处理成灰度图，作用：
                  #现在大部分的彩色图像都是采用RGB颜色模式，处理图像的时候，要分别对RGB三种分量进行处理，
                  # 实际上RGB并不能反映图像的形态特征，只是从光学的原理上进行颜色的调配。

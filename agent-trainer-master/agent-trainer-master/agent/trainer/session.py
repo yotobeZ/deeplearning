@@ -15,13 +15,14 @@ from agent.trainer.visualization.metrics import Metrics, MetricsInTrainBundle, M
 
 
 class SessionRunner(object):
-    #初始化计算图
+    #初始化计算图的参数
     def __init__(self,
                  config,
                  #初始化episode runner每一次的训练格式，配置好游戏画面，音乐，定义图片长款及灰度化
                  episode_runner=EpisodeRunner(),
                  #一般属性，都是代表什么的属性？？？？
                  generic_hyperparameters=GenericHyperparameters(),
+                 #这个episode_runner里已经定义过了吧。。。。。。。。。
                  preprocessor_hyperparameters=PreprocessorHyperparameters()):
         self.logger = logging.getLogger(__name__)
         self.config = config
@@ -102,10 +103,12 @@ class SessionMetricsPresenter(object):
         session = Session(config=self.config, session_id=session_id)
         session.save_metrics_to_image()
 
-
+#产生session_id，格式为年月日小时分钟 eg.201803031841
+#有趣！就想说理解一下这个时间的格式，随便写个看看，结果一写发现似曾相识啊！总算理解了readme里的session_id怎么回事了
 def _generate_session_id():
     return str(dt.now().strftime("%Y%m%d%H%M"))
 
+# Session(config=self.config)
 class Session(object):
 
     def __init__(self, config, session_id=_generate_session_id()):
@@ -155,6 +158,11 @@ class SessionRepository(object):
 
     ASSET_REPLAY_MEMORIES = "replay_memories"
     ASSET_Q_NETWORK = "q_network.data"
+    #global step is used count training steps
+    #global_step refer to the number of batches seen by the graph. Everytime a batch is provided,
+    # the weights are updated in the direction that minimizes the loss. global_step just keeps track of
+    # the number of batches seen so far. When it is passed in the minimize() argument list,
+    #  the variable is increased by one. Have a look at optimizer.minimize().
     ASSET_GLOBAL_STEP = "global_step.pickle"
     ASSET_EPISODE_NUMBER = "episode_number.pickle"
     ASSET_METRICS_IN_TRAIN = "metrics_in_train.data"
@@ -163,6 +171,7 @@ class SessionRepository(object):
     ASSET_METRICS_TRAINED_PLAY_IMAGE = "metrics_trained_play.png"
 
     FOLDER_NAME_REPLAY_MEMORIES = "replay-memories"
+    # 我们需要为某个系统某个服务做监控、做统计，就需要用到 Metrics。
     FOLDER_NAME_METRICS_SESSION = "metrics-session"
     FOLDER_NAME_METRICS_Q_NETWORK = "metrics-q-network"
     FOLDER_NAME_VISUALIZATIONS = "visualizations"

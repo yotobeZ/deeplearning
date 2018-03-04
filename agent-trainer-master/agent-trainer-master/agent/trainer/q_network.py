@@ -28,10 +28,14 @@ QNetworkTrainBundle = namedtuple("QNetworkTrainBundle", ["state", "action_index"
 class QNetworkFactory(object):
     def create(self, screen_width, screen_height, num_channels, num_actions, metrics_directory, batched_forward_pass_size):
         return QNetwork(screen_width, screen_height, num_channels, num_actions, metrics_directory, batched_forward_pass_size)
+    #metrics_directory是检测目录？？？？？？？batched_forward_pass_size？？？？？？？？？？？？？？
 
 class QNetwork(object):
 
     MODEL_NAME_TRAIN = 'model-train'
+    #forward and backward passes（前向迭代和反向迭代）是Net最基本的成分。
+    #Forward Pass（前向迭代）利用给定的输入，根据模型设定的函数，计算出输出。
+    # This pass goes from bottom to top（数据流向从bottom到top）。
     MODEL_NAME_FORWARD_PASS = 'model-forward-pass'
 
     def __init__(self,
@@ -41,6 +45,7 @@ class QNetwork(object):
                  num_actions,
                  metrics_directory,
                  batched_forward_pass_size,
+                 #学习率，衰减率等参数
                  hyperparameters=QNetworkHyperparameters()):
         self.logger = logging.getLogger(__name__)
         self.screen_width = screen_width
@@ -50,13 +55,24 @@ class QNetwork(object):
         self.batched_forward_pass_size = batched_forward_pass_size
         self.hyperparameters = hyperparameters
 
+        #A TensorFlow computation, represented as a dataflow graph.
+        #A Graph contains a set of Operation objects, which represent units of computation;
+        # and Tensor objects, which represent the units of data that flow between operations.
+        #A default Graph is always registered
         self.tf_graph = tf.Graph()
+
         self.tf_graph_forward_pass_bundle_single = self._build_graph_forward_pass_bundle(self.tf_graph, 1)
         self.tf_graph_forward_pass_bundle_batched = self._build_graph_forward_pass_bundle(self.tf_graph, batched_forward_pass_size)
+
         self.tf_graph_train_bundle = self._build_graph_train_bundle(self.tf_graph)
 
         self.tf_session = tf.Session(graph=self.tf_graph)
 
+        #Another typical usage involves the Graph.as_default() context manager,
+        # which overrides the current default graph for the lifetime of the context:
+        #另外一种典型的用法就是要使用到Graph.as_default() 的上下文管理器（ context manager），它能够在这个上下文里面覆盖默认的图。
+        #并且自己成为新的默认的图。
+        #不是定义在with语句里面的，会包含在最开始的那个图中。也就是说，要在某个graph里面定义量，要在with语句的范围里面定义。
         with self.tf_graph.as_default():
             self.tf_all_summaries = tf.merge_all_summaries()
             self.tf_summary_writer = tf.train.SummaryWriter(logdir=metrics_directory, graph=self.tf_graph)
@@ -65,9 +81,10 @@ class QNetwork(object):
 
         self.assigns_train_to_forward_pass_variables = self._build_assigns_train_to_forward_pass_variables()
 
-
+    #forward bundle ？？？？？？？计算时候bundle代表什么，不是梯度下降减小误差时用batch才有的bundle？？？
     def _build_graph_forward_pass_bundle(self, graph, batch_size):
         with graph.as_default():
+            #Inserts a placeholder for a tensor that will be always fed.
             input_state = tf.placeholder(tf.float32,
                                          shape=(batch_size, self.screen_height, self.screen_width, self.num_channels),
                                          name='input_state')
