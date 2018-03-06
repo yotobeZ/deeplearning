@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../DRL-FlappyBird-master/.idea/DRL-FlappyBird-master.iml" filepath="$PROJECT_DIR$/../DRL-FlappyBird-master/.idea/DRL-FlappyBird-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/agent-trainer-master.iml" filepath="$PROJECT_DIR$/.idea/agent-trainer-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../testprojects/.idea/testprojects.iml" filepath="$PROJECT_DIR$/../testprojects/.idea/testprojects.iml" />
     </modules>
   </component>
 </project>
